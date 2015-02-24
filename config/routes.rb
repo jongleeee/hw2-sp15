@@ -3,8 +3,14 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   root 'pages#home'
-  get 'age', to: 'pages#age'
-  # Example of regular route:
+  get 'age', to: 'pages#person'
+  get 'home', to: 'pages#home' 
+
+  put 'age', to: 'pages#person'
+  post 'stringify', to: 'pages#stringify'
+ 
+ 
+# Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
